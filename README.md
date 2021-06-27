@@ -2,6 +2,10 @@
 
 Simple graphical launcher for Kerio VPN Client with system tray indicator.
 
+![Connect to VPN](doc/connect.png)
+
+![Connect to VPN](doc/disconnect.png)
+
 ## Usage
 
 ```shell
