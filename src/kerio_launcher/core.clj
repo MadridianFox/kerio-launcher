@@ -1,4 +1,4 @@
-(ns gs-kerio-launcher.core
+(ns kerio-launcher.core
   (:use [clojure.java.shell :as shell]
         [clojure.pprint]
         [clojure.java.io :as io])
@@ -27,12 +27,12 @@
 
 (defn setupIcon []
   (let [icon (SystemTray/get)
-        img-black (io/resource "images/Greensight_logo_Black.png")
-        img-white (io/resource "images/Greensight_logo_White.png")
+        img-black (io/resource "images/disabled.png")
+        img-white (io/resource "images/enabled.png")
         quit-action (proxy [ActionListener] []
                       (actionPerformed [event]
                         (.shutdown icon)
-                        (.exit System 0)))
+                        (System/exit 0)))
         stop-action (proxy [ActionListener] []
                       (actionPerformed [event]
                         (stop-kerio)

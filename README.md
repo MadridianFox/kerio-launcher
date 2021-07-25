@@ -1,4 +1,4 @@
-# gs-kerio-launcher
+# kerio-launcher
 
 Simple graphical launcher for Kerio VPN Client with system tray indicator.
 
@@ -9,12 +9,12 @@ Simple graphical launcher for Kerio VPN Client with system tray indicator.
 ## Usage
 
 ```shell
-java -jar gs-kerio-launcher.jar
+java -jar kerio-launcher.jar
 ```
 
 ## License
 
-Copyright © 2021 FIXME
+Copyright © 2021 MadridianFox
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
